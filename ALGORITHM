@@ -1,0 +1,21 @@
+Begin if (x,y) is the bottom 
+right corner, then mark the 
+place as 1 return true if 
+isValidPlace(x, y) = true, 
+then mark (x, y) place as 1
+if solveRatMaze(x+1, y) = 
+true, then //for 
+forward movement 
+return true
+if solveRatMaze(x, y+1) = true, 
+then //for down 
+movement return true 
+mark (x,y) as 0 
+when backtracks
+isValid(x, y)
+Input:x and y point in the maze.
+Output: True if the (x,y) place is valid, otherwisefalse.
+Begin if x and y are in range and (x,y) 
+place is not blocked, then return true
+return false
+End
